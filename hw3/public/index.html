@@ -1,0 +1,100 @@
+<!-- Author: Cody Gima-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheesecake Order Form</title>
+
+    <!-- Script for jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+  </head>
+  <body>
+    <h1>Cheesecake Order Form</h1>
+
+    <!-- Cheesecake Image -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+      alt="Cheesecake Slice"
+      width="300"
+    />
+
+    <!-- Form Container -->
+    <form action="#" method="post" class="form-container">
+      <!-- Quantity Section -->
+      <div class="form-section">
+        <label for="quantity" class="section-label">Quantity:</label>
+        <select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+
+      <!-- Topping Section -->
+      <div class="form-section">
+        <label class="section-label">Topping:</label>
+        <label><input type="radio" name="topping" value="plain" /> Plain</label>
+        <label
+          ><input type="radio" name="topping" value="cherry" /> Cherry</label
+        >
+        <label
+          ><input type="radio" name="topping" value="chocolate" />
+          Chocolate</label
+        >
+      </div>
+
+      <!-- Notes Section -->
+      <div class="form-section">
+        <label for="notes" class="section-label">Notes:</label>
+        <textarea
+          name="notes"
+          id="notes"
+          rows="4"
+          cols="40"
+          placeholder="Enter any special instructions here..."
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-section">
+        <input type="submit" value="Order" class="submit-button" />
+      </div>
+    </form>
+    <!-- External Source for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+    <div class="dropdown">
+      <h2 class="order-header">Orders for</h2>
+      <button class="dropbtn">Jan</button>
+      <div class="dropdown-content">
+        <li>Jan</li>
+        <li>Feb</li>
+        <li>Mar</li>
+        <li>Apr</li>
+        <li>May</li>
+        <li>Jun</li>
+        <li>Jul</li>
+        <li>Aug</li>
+        <li>Sep</li>
+        <li>Oct</li>
+        <li>Nov</li>
+        <li>Dec</li>
+      </div>
+    </div>
+    <section class="section-total">
+      <ul>
+        <li>11 Cherry</li>
+        <li>17 Chocolate</li>
+        <li>31 Plain</li>
+      </ul>
+    </section>
+    <!-- jQuery script for modification 1 -->
+    <script src="javascripts/order.js"></script>
+    <!-- jQuery script for modification 2 -->
+    <script src="javascripts/dropdown.js"></script>
+  </body>
+</html>
